@@ -1,0 +1,148 @@
+/*@font-face {
+    font-family: 'Playfair Display';
+    src: url('static/font/PlayFairDisplay/PlayfairDisplay-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Playfair Display regular' ;
+    src: url(static/font/PlayFairDisplay/PlayfairDisplay-Regular.ttf);
+}*/
+
+.header-txt{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: initial;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+.flex-container{
+    display: flex;
+    margin-top: 60px;
+}
+
+.flex-container > div{
+    flex: 1;
+}
+
+.form-div{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.form-div > input{
+    border: none;
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 12px 15px;
+    margin-right: 10px;
+    margin-bottom: 6px;
+}
+
+.form-div > input::placeholder{
+    font-size: 11px;
+}
+
+.form-div > input:focus{
+    outline: none;
+    border: 1px solid #4977EA;
+    box-shadow: 0 0 3px #4977EA;
+    padding: 11px 14px;
+}
+
+.form-div > button{
+    padding: 13px 13px;
+    color: white;
+    background-color: #4977EA;
+    border: none;
+    border-radius: 3px;
+    font-size: 10px;
+    font-family: 'Lato';
+    transition: background-color 0.2s;
+    cursor: pointer;
+    margin-bottom: 6px;
+}
+
+input[type="checkbox"]
+{
+    accent-color: rgb(1, 165, 83);
+    width: 15px;
+    height: 15px;
+}
+
+.image-div{
+    width: 350px;
+    height: 345px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.image-div > img{
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left:50px;
+}
+
+
+.image-div > img:first-child{
+    transform: rotate(-45deg);
+}
+.image-div > img:nth-child(2)
+{
+    transform: rotate(-30deg)
+}
+.image-div > img:nth-child(3)
+{
+    transform: rotate(-15deg);
+}
+.flex-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.flex-footer a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.flex-footer > div > a{
+    margin-right: 10px;
+}
+
+.flex-footer>div>a:hover{
+    color: rgb(76, 197, 245)
+}
+
+.flex-footer img{
+    width: 38px;
+    margin-right: 10px;
+}
+.contact-grid{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px)
+{
+    .flex-container{
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 540px)
+{
+    .flex-footer{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100px;
+    }
+
+    .form-div{
+        flex-direction: column;
+    }
+}

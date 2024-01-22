@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('static/font/Lato/Lato-Regular.ttf');
+}
+
+
+body{
+    background-color: #F9F4E8;
+    color: rgb(112, 112, 112);
+    padding: 15px 70px;
+    font-family: 'Lato';
+    font-size: 13px;
+}
+
+.border{
+    border: 2px solid blue;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px)
+{
+    body{
+        padding: 15px;
+    }
+}
+
